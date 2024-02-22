@@ -12,7 +12,7 @@ namespace Game.Scripts.Editors
         [TabGroup("GRID")][SerializeField] private Transform _gridParent;
         [TabGroup("GRID")][SerializeField] private Grid _grid;
         [TabGroup("GRID")][SerializeField] private Vector2 _gridCoordinateValue;
-
+        
         [Button]
         public void CreateGrids()
         {
@@ -46,6 +46,7 @@ namespace Game.Scripts.Editors
             
             SetCameraPosition();
             FindNeighbours();
+            SetGridNames();
         }
 
         [Button]
@@ -65,17 +66,29 @@ namespace Game.Scripts.Editors
                 for (int j = 0; j < gridManager.Grids.GetLength(1); j++)
                 {
                     if (j > 0)
-                        gridManager.Grids[i,j].Neighbours.Add(gridManager.Grids[i,j - 1]);
+                        gridManager.Grids[i,j].Neighbors.Add(gridManager.Grids[i,j - 1]);
                     
                     if (j < gridManager.Grids.GetLength(1) - 1)
-                        gridManager.Grids[i,j].Neighbours.Add(gridManager.Grids[i,j + 1]);
+                        gridManager.Grids[i,j].Neighbors.Add(gridManager.Grids[i,j + 1]);
                     
                     if (i > 0)
-                        gridManager.Grids[i,j].Neighbours.Add(gridManager.Grids[i - 1,j]);
+                        gridManager.Grids[i,j].Neighbors.Add(gridManager.Grids[i - 1,j]);
                     
                     if (i < gridManager.Grids.GetLength(0) - 1)
-                        gridManager.Grids[i,j].Neighbours.Add(gridManager.Grids[i + 1,j]);
+                        gridManager.Grids[i,j].Neighbors.Add(gridManager.Grids[i + 1,j]);
                 }
+            }
+        }
+
+        [Button]
+        public void SetGridNames()
+        {
+            
+            List<Grid> grids = FindObjectsOfType<Grid>().ToList();
+            grids.Reverse();
+            for (int i = 0; i < grids.Count; i++)
+            {
+                grids[i].name = "" + i;
             }
         }
     }
