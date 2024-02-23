@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Game.Scripts.Events;
@@ -19,6 +20,8 @@ namespace Game.Scripts.Managers
         private string _state;
         private int _key;
 
+        private List<Grid> _searcherList = new List<Grid>();
+
         public void Initialize()
         {
             OnEnable();
@@ -36,32 +39,33 @@ namespace Game.Scripts.Managers
 
         private void FindNewPath(object sender, EventArgs args)
         {
-            _pathDictionary.Clear();
+            if (_state == "Search") 
+                return;
             
-            if (First == GameManager.Instance.GridManager.ClickGrid 
+            _pathDictionary.Clear();
+            _searcherList.Clear();
+
+            if (First == GameManager.Instance.GridManager.ClickGrid
                 || Last == GameManager.Instance.GridManager.ClickGrid)
                 return;
             
             _state = "Search";
             _pathDictionary.Add(new List<Grid>{First}, 0);
             _key = 0;
-            int count = 1;
             
-
             while (_state == "Search")
             {
                 SearchNeighbors();
-                count++;
                 
-                if (count == GameManager.Instance.GridManager.Grids.Length)
+                if (_searcherList.Count == GameManager.Instance.GridManager.Grids.Length)
                 {
                     _state = "NotFound";
+                    return;
                 }
             }
 
             if (_state == "Found")
             {
-                Path = _pathDictionary.ElementAt(_key).Key.ToArray();
                 GameManager.Instance.GridManager.ClickGrid.SetGridSituation(GridSituation.Tower);
                 GameManager.Instance.GridManager.CheckGrids();
             }
@@ -70,8 +74,15 @@ namespace Game.Scripts.Managers
         private void SearchNeighbors()
         {
             FindMinimumDistance();
-
+            
             Grid lastGrid = _pathDictionary.ElementAt(_key).Key[^1];
+
+            if (_searcherList.Contains(lastGrid))
+            {
+                _pathDictionary[_pathDictionary.ElementAt(_key).Key] *= 100f;
+                return;
+            }
+            
             Grid[] temp = new Grid[_pathDictionary.ElementAt(_key).Key.Count + 1];
 
             for (int i = 0; i < _pathDictionary.ElementAt(_key).Key.Count; i++)
@@ -79,23 +90,34 @@ namespace Game.Scripts.Managers
                 temp[i] = _pathDictionary.ElementAt(_key).Key[i];
             }
             
-            _pathDictionary.Remove(_pathDictionary.ElementAt(_key).Key);
-            
+            bool canRemove = false;
+
             foreach (var neighbor in lastGrid.Neighbors)
             {
                 if (neighbor.GridSituation != GridSituation.Tower 
-                     && neighbor != GameManager.Instance.GridManager.ClickGrid && (_pathDictionary.Count == 0 
-                         || !_pathDictionary.ElementAt(_key).Key.Contains(neighbor)))
+                     && neighbor != GameManager.Instance.GridManager.ClickGrid &&
+                     !_pathDictionary.ElementAt(_key).Key.Contains(neighbor) && !_searcherList.Contains(neighbor))
                 {
                     temp[^1] = neighbor;
                     float distance = FindDistance(neighbor);
 
-                    _pathDictionary.TryAdd(temp.ToList(), temp.Length + distance);
+                    if (!_pathDictionary.ContainsKey(temp.ToList()))
+                    {
+                        if (!canRemove)
+                        {
+                            canRemove = true;
+                            _searcherList.Add(lastGrid);
+                            _pathDictionary.Remove(_pathDictionary.ElementAt(_key).Key);
+                        }
+                      
+                        _pathDictionary.Add(temp.ToList(), temp.Length + distance);
+                    }
+                   
 
                     if (distance == 0)
                     {
                         _state = "Found";
-                        _key = _pathDictionary.Count - 1;
+                        Path = temp;
                         return;
                     }
                 }
@@ -108,7 +130,7 @@ namespace Game.Scripts.Managers
         
             for (int i = 0; i < _pathDictionary.Count; i++)
             {
-                if (_pathDictionary[_pathDictionary.Keys.ElementAt(i)] < min)
+                if (_pathDictionary[_pathDictionary.Keys.ElementAt(i)] <= min)
                 {
                     min = _pathDictionary[_pathDictionary.Keys.ElementAt(i)];
                     _key = i;
