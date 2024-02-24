@@ -76,13 +76,8 @@ namespace Game.Scripts.Managers
             FindMinimumDistance();
             
             Grid lastGrid = _pathDictionary.ElementAt(_key).Key[^1];
+            _searcherList.Add(lastGrid);
 
-            if (_searcherList.Contains(lastGrid))
-            {
-                _pathDictionary[_pathDictionary.ElementAt(_key).Key] *= 100f;
-                return;
-            }
-            
             Grid[] temp = new Grid[_pathDictionary.ElementAt(_key).Key.Count + 1];
 
             for (int i = 0; i < _pathDictionary.ElementAt(_key).Key.Count; i++)
@@ -90,7 +85,6 @@ namespace Game.Scripts.Managers
                 temp[i] = _pathDictionary.ElementAt(_key).Key[i];
             }
             
-            bool canRemove = false;
 
             foreach (var neighbor in lastGrid.Neighbors)
             {
@@ -101,18 +95,7 @@ namespace Game.Scripts.Managers
                     temp[^1] = neighbor;
                     float distance = FindDistance(neighbor);
 
-                    if (!_pathDictionary.ContainsKey(temp.ToList()))
-                    {
-                        if (!canRemove)
-                        {
-                            canRemove = true;
-                            _searcherList.Add(lastGrid);
-                            _pathDictionary.Remove(_pathDictionary.ElementAt(_key).Key);
-                        }
-                      
-                        _pathDictionary.Add(temp.ToList(), temp.Length + distance);
-                    }
-                   
+                    _pathDictionary.TryAdd(temp.ToList(), temp.Length + distance);
 
                     if (distance == 0)
                     {
@@ -130,7 +113,8 @@ namespace Game.Scripts.Managers
         
             for (int i = 0; i < _pathDictionary.Count; i++)
             {
-                if (_pathDictionary[_pathDictionary.Keys.ElementAt(i)] <= min)
+                if (_pathDictionary[_pathDictionary.Keys.ElementAt(i)] <= min
+                    && !_searcherList.Contains(_pathDictionary.ElementAt(i).Key[^1]))
                 {
                     min = _pathDictionary[_pathDictionary.Keys.ElementAt(i)];
                     _key = i;
