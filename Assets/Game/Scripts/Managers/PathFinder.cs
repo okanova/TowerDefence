@@ -11,20 +11,37 @@ namespace Game.Scripts.Managers
 {
     public class PathFinder : MonoBehaviour
     {
-        public Grid First;
-        public Grid Last;
-
-        public Grid[] Path;
+        public PathClass[] Paths;
+       
         private Dictionary<List<Grid>, float> _pathDictionary = new Dictionary<List<Grid>, float>();
 
         private string _state;
+        public string PathState => _state;
+        
         private int _key;
+        private int _pathCount;
 
         private List<Grid> _searcherList = new List<Grid>();
 
         public void Initialize()
         {
             OnEnable();
+            
+            
+            for (int i = 0; i < GameManager.Instance.GridManager.Grids.GetLength(0); i++)
+            {
+                for (int j = 0; j < GameManager.Instance.GridManager.Grids.GetLength(1); j++)
+                {
+                    for (int k = 0; k < Paths.Length; k++)
+                    {
+                        if (GameManager.Instance.GridManager.Grids[i, j] == Paths[k].Enter)
+                            GameManager.Instance.GridManager.Grids[i, j].SetGridSituation(GridSituation.Enter);
+                        else if (GameManager.Instance.GridManager.Grids[i, j] == Paths[k].Exit)
+                            GameManager.Instance.GridManager.Grids[i, j].SetGridSituation(GridSituation.Exit);
+                    }
+                }
+            }
+          
         }
 
         private void OnEnable()
@@ -42,36 +59,47 @@ namespace Game.Scripts.Managers
             if (_state == "Search") 
                 return;
             
-            _pathDictionary.Clear();
-            _searcherList.Clear();
-
-            if (First == GameManager.Instance.GridManager.ClickGrid
-                || Last == GameManager.Instance.GridManager.ClickGrid)
+            
+            if ( GameManager.Instance.GridManager.ClickGrid.GridSituation == GridSituation.Enter
+                || GameManager.Instance.GridManager.ClickGrid.GridSituation == GridSituation.Exit 
+                || GameManager.Instance.GridManager.ClickGrid.GridSituation == GridSituation.Tower)
                 return;
             
-            _state = "Search";
-            _pathDictionary.Add(new List<Grid>{First}, 0);
-            _key = 0;
-            
-            while (_state == "Search")
+            for (int i = 0; i < Paths.Length; i++)
             {
-                SearchNeighbors();
-                
-                if (_searcherList.Count == GameManager.Instance.GridManager.Grids.Length)
+                _pathDictionary.Clear();
+                _searcherList.Clear();
+                _pathCount = 0;
+
+                _state = "Search";
+                _pathDictionary.Add(new List<Grid>{Paths[i].Enter}, 0);
+                _key = 0;
+            
+                while (_state == "Search")
                 {
-                    _state = "NotFound";
-                    return;
+                    SearchNeighbors(i);
+                
+                    if (_searcherList.Count == GameManager.Instance.GridManager.Grids.Length)
+                    {
+                        _state = "NotFound";
+                        return;
+                    }
+
+                    if (_pathCount == Paths.Length)
+                        _state = "Found";
                 }
             }
-
+            
             if (_state == "Found")
             {
+                GameManager.Instance.GridManager.ClearGridColors();
                 GameManager.Instance.GridManager.ClickGrid.SetGridSituation(GridSituation.Tower);
+                SetGridForms();
                 GameManager.Instance.GridManager.CheckGrids();
             }
         }
 
-        private void SearchNeighbors()
+        private void SearchNeighbors(int count)
         {
             FindMinimumDistance();
             
@@ -93,14 +121,15 @@ namespace Game.Scripts.Managers
                      !_pathDictionary.ElementAt(_key).Key.Contains(neighbor) && !_searcherList.Contains(neighbor))
                 {
                     temp[^1] = neighbor;
-                    float distance = FindDistance(neighbor);
+                    float distance = FindDistance(neighbor, Paths[count].Exit);
 
                     _pathDictionary.TryAdd(temp.ToList(), temp.Length + distance);
 
                     if (distance == 0)
                     {
-                        _state = "Found";
-                        Path = temp;
+                        _pathCount = count + 1;
+                        _state = "NextStep";
+                        Paths[count].Path = temp;
                         return;
                     }
                 }
@@ -122,9 +151,30 @@ namespace Game.Scripts.Managers
             }
         }
 
-        private float FindDistance(Grid lastGrid)
+        private float FindDistance(Grid current, Grid end)
         {
-            return Vector3.Distance(Last.transform.position, lastGrid.transform.position);
+            return Vector3.Distance(end.transform.position, current.transform.position);
         }
+
+        private void SetGridForms()
+        {
+            for (int i = 0; i < Paths.Length; i++)
+            {
+                for (int j = 0; j < Paths[i].Path.Length; j++)
+                {
+                    if (Paths[i].Path[j].GridSituation != GridSituation.Enter && Paths[i].Path[j].GridSituation != GridSituation.Exit)
+                        Paths[i].Path[j].SetGridSituation(GridSituation.Path);
+                }
+            }
+        }
+    }
+
+
+    [Serializable]
+    public class PathClass
+    {
+        public Grid Enter;
+        public Grid Exit;
+        public Grid[] Path;
     }
 }

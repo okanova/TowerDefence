@@ -47,13 +47,26 @@ namespace Game.Scripts.Managers
             }
         }
 
+        public void ClearGridColors()
+        {
+            for (int i = 0; i < Grids.GetLength(0); i++)
+            {
+                for (int j = 0; j < Grids.GetLength(1); j++)
+                {
+                    Grids[i, j].Material.SetColor("_BaseColor", Color.gray);
+                    if (Grids[i,j].GridSituation == GridSituation.Path)
+                        Grids[i,j].SetGridSituation(GridSituation.Empty);
+                }
+            }
+        }
+
         public void CheckGrids()
         {
             for (int i = 0; i < Grids.GetLength(0); i++)
             {
                 for (int j = 0; j < Grids.GetLength(1); j++)
                 {
-                    if (Grids[i,j] == GameManager.Instance.PathFinder.First || Grids[i,j] == GameManager.Instance.PathFinder.Last)
+                    if (Grids[i,j].GridSituation == GridSituation.Enter || Grids[i,j].GridSituation == GridSituation.Exit)
                     {
                         Grids[i,j].Material.SetColor("_BaseColor",Color.green);
                     }
@@ -61,9 +74,8 @@ namespace Game.Scripts.Managers
                     {
                         Grids[i,j].Material.SetColor("_BaseColor",Color.red);
                     }
-                    else if (GameManager.Instance.PathFinder.Path.Contains(Grids[i, j]))
+                    else if (Grids[i,j].GridSituation == GridSituation.Path)
                     {
-                        Grids[i, j].SetGridSituation(GridSituation.Path);
                         Grids[i,j].Material.SetColor("_BaseColor",Color.cyan);
                     }
                     else
