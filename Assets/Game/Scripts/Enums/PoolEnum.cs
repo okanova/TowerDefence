@@ -1,5 +1,5 @@
 public enum ObjectPoolType
 {
-    Goblin,
+    Enemy,
     
 }

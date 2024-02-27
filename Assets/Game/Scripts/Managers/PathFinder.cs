@@ -26,8 +26,7 @@ namespace Game.Scripts.Managers
         public void Initialize()
         {
             OnEnable();
-            
-            
+
             for (int i = 0; i < GameManager.Instance.GridManager.Grids.GetLength(0); i++)
             {
                 for (int j = 0; j < GameManager.Instance.GridManager.Grids.GetLength(1); j++)
@@ -41,6 +40,10 @@ namespace Game.Scripts.Managers
                     }
                 }
             }
+
+            object obj = new object();
+            EventArgs args = new EventArgs();
+            FindNewPath(obj, args);
           
         }
 
@@ -60,9 +63,10 @@ namespace Game.Scripts.Managers
                 return;
             
             
-            if ( GameManager.Instance.GridManager.ClickGrid.GridSituation == GridSituation.Enter
+            if (GameManager.Instance.GridManager.ClickGrid != null && (
+                    GameManager.Instance.GridManager.ClickGrid.GridSituation == GridSituation.Enter
                 || GameManager.Instance.GridManager.ClickGrid.GridSituation == GridSituation.Exit 
-                || GameManager.Instance.GridManager.ClickGrid.GridSituation == GridSituation.Tower)
+                || GameManager.Instance.GridManager.ClickGrid.GridSituation == GridSituation.Tower))
                 return;
             
             for (int i = 0; i < Paths.Length; i++)
@@ -93,7 +97,9 @@ namespace Game.Scripts.Managers
             if (_state == "Found")
             {
                 GameManager.Instance.GridManager.ClearGridColors();
-                GameManager.Instance.GridManager.ClickGrid.SetGridSituation(GridSituation.Tower);
+                if ( GameManager.Instance.GridManager.ClickGrid != null)
+                    GameManager.Instance.GridManager.ClickGrid.SetGridSituation(GridSituation.Tower);
+                
                 SetGridForms();
                 GameManager.Instance.GridManager.CheckGrids();
             }

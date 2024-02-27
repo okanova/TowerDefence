@@ -8,6 +8,7 @@ namespace Game.Scripts.Managers
         public PathFinder PathFinder;
         public EventManager EventManager;
         public ObjectPooling ObjectPooling;
+        public EnemyManager EnemyManager;
         
         private void Start()
         {
@@ -15,10 +16,12 @@ namespace Game.Scripts.Managers
             PathFinder = FindObjectOfType<PathFinder>();
             EventManager = FindObjectOfType<EventManager>();
             ObjectPooling = FindObjectOfType<ObjectPooling>();
+            EnemyManager = FindObjectOfType<EnemyManager>();
             
             GridManager.Initialize();
             PathFinder.Initialize();
             ObjectPooling.Initialize();
+            EnemyManager.Initialize();
         }
     }
 }
