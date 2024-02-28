@@ -13927,9 +13927,6 @@ MonoBehaviour:
   - Enter: {fileID: 1931096636}
     Exit: {fileID: 197672662}
     Path: []
-  - Enter: {fileID: 610291014}
-    Exit: {fileID: 1396506252}
-    Path: []
 --- !u!1 &1664337677
 GameObject:
   m_ObjectHideFlags: 0

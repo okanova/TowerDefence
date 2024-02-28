@@ -37,11 +37,13 @@ public class Enemy : MonoBehaviour
      
       public void Initialize(EnemyType type, int pathCount)
       {
+          transform.SetParent(null);
           _pathCount = pathCount;
           SetEnemyType(type);
           ChooseModel();
           FindValues();
           SetEnemySituation(EnemySituation.Walk);
+          _animator.speed = _enemySettings.GoblinAnimationSpeed;
           Movement();
       }
       

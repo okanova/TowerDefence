@@ -10,5 +10,6 @@ namespace Game.Scripts.Settings
         [TabGroup("GOBLIN")] public int GoblinDamage;
         [TabGroup("GOBLIN")] public int GoblinGold;
         [TabGroup("GOBLIN")] public float GoblinSpeed;
+        [TabGroup("GOBLIN")] public float GoblinAnimationSpeed;
     }
 }
