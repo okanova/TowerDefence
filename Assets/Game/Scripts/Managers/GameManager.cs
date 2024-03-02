@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Game.Scripts.Managers
@@ -9,6 +10,7 @@ namespace Game.Scripts.Managers
         public EventManager EventManager;
         public ObjectPooling ObjectPooling;
         public EnemyManager EnemyManager;
+        public UIManager UIManager;
         
         private void Start()
         {
@@ -17,11 +19,21 @@ namespace Game.Scripts.Managers
             EventManager = FindObjectOfType<EventManager>();
             ObjectPooling = FindObjectOfType<ObjectPooling>();
             EnemyManager = FindObjectOfType<EnemyManager>();
+            UIManager = FindObjectOfType<UIManager>();
             
             GridManager.Initialize();
             PathFinder.Initialize();
             ObjectPooling.Initialize();
             EnemyManager.Initialize();
+            UIManager.Initialize();
+            
+            
+            EventManager.GameLose += LoseGame;
+        }
+
+        private void LoseGame(object sender, EventArgs args)
+        {
+            
         }
     }
 }
