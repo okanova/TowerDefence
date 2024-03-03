@@ -1,6 +1,7 @@
 using System;
 using Game.Scripts.Consts;
 using Game.Scripts.Interfaces;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Game.Scripts.Managers
@@ -65,7 +66,14 @@ namespace Game.Scripts.Managers
 
         public void ResetData()
         {
-            throw new NotImplementedException();
+            PlayerPrefs.SetInt(LevelConsts.GameStart, 0);
+            PlayerPrefs.SetInt(LevelConsts.Level, 0);
+        }
+        
+        [Button]
+        public void ResetSave()
+        {
+            PlayerPrefs.DeleteAll();
         }
     }
 }

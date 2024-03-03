@@ -524,7 +524,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3201966190415252129}
   - component: {fileID: 3254627990275299555}
-  - component: {fileID: 3308213316739953167}
   - component: {fileID: 3287032448723457277}
   m_Layer: 0
   m_Name: Goblin
@@ -572,30 +571,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3308213316739953167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3205030975377759857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 153dd393b80768d4d8587c484df95783, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shootElement: {fileID: 0}
-  bullet: {fileID: 0}
-  Enemybug: {fileID: 3205287403933786093}
-  Creature_Damage: 10
-  Speed: 2
-  waypoints:
-  - {fileID: 4951462613596946, guid: 49d144698851ec547865738ab31e7325, type: 3}
-  previous_Speed: 0
-  anim: {fileID: 0}
-  Enemy_Hp: {fileID: 0}
-  target: {fileID: 0}
-  EnemyTarget: {fileID: 0}
 --- !u!135 &3287032448723457277
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -866,7 +841,6 @@ GameObject:
   - component: {fileID: 3183801069912417241}
   - component: {fileID: 3287217357626720423}
   - component: {fileID: 3224062141011851155}
-  - component: {fileID: 3308291360287602939}
   m_Layer: 0
   m_Name: Enemy_Bug
   m_TagString: enemyBug
@@ -968,19 +942,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3308291360287602939
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3205287403933786093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b6d63bc97dbdbd4cbb197d5c4dacdfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  EnemyHP: 15
 --- !u!1 &3205290859917476141
 GameObject:
   m_ObjectHideFlags: 0

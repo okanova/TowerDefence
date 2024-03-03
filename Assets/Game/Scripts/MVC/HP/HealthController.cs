@@ -62,11 +62,5 @@ namespace Game.Scripts.MVC.HP
         {
             PlayerPrefs.SetInt(CurrencyDataConsts.Health, _firstHP);
         }
-
-        [Button]
-        public void ResetSave()
-        {
-            PlayerPrefs.DeleteAll();
-        }
     }
 }

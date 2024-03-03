@@ -134,7 +134,8 @@ public class Enemy : MonoBehaviour
       
       public void Attack()
       {
-        
+            GameManager.Instance.UIManager.HealthController.RemoveValue(_damage);
+            GameManager.Instance.ObjectPooling.ReturnObjectToPool(gameObject);
       }
 
       public void TakeDamage(int damage, int count = 0, int extraDamage = 0)
