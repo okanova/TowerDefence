@@ -5565,6 +5565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4e459e026a3f3a4b9a57d40e0f7367a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _firstHP: 20
 --- !u!1 &553779739
 GameObject:
   m_ObjectHideFlags: 0
@@ -12072,6 +12073,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc1b5ca02bf6e4c478c3552ab7268d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _firstGold: 100
 --- !u!1 &1367242935
 GameObject:
   m_ObjectHideFlags: 0
@@ -18672,7 +18674,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 505d36553c4aa61418ccd42156062db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GoldController: {fileID: 0}
+  GoldController: {fileID: 1366968526}
+  HealthController: {fileID: 553494150}
 --- !u!1 &2085422430
 GameObject:
   m_ObjectHideFlags: 0
