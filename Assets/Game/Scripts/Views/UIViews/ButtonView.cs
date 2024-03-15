@@ -15,7 +15,7 @@ namespace Game.Scripts.Views.UIViews
 
       protected virtual void ButtonClick()
       {
-         
+        
       }
    }
 }

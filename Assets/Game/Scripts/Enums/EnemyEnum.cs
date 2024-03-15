@@ -1,6 +1,7 @@
 public enum EnemyType
 {
     Goblin,
+    BossGoblin
 }
 
 public enum EnemySituation

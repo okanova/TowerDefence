@@ -104,6 +104,7 @@ namespace Game.Scripts.Managers
                 {
                     BuyState = "CanBuy";
                     GameManager.Instance.UIManager.OpenBuyTowerPanel();
+                    GameManager.Instance.GridManager.CanClick = false;
                 }
                 else
                 {
@@ -114,6 +115,7 @@ namespace Game.Scripts.Managers
                     SetGridForms();
                     GameManager.Instance.GridManager.CheckGrids();
                     BuyState = "Clear";
+                    GameManager.Instance.GridManager.CanClick = true;
                 }
             }
         }

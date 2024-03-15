@@ -11,6 +11,7 @@ namespace Game.Scripts.Managers
         public Grid[,] Grids;
         public Grid ClickGrid;
 
+        public bool CanClick;
         
         public void Initialize()
         {

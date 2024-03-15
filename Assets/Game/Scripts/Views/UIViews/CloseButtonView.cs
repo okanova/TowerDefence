@@ -9,8 +9,9 @@ namespace Game.Scripts.Views.UIViews
 
         protected override void ButtonClick()
         {
+            GameManager.Instance.PathFinder.BuyState = "Clear";
+            GameManager.Instance.GridManager.CanClick = true;
             _closeObject.SetActive(false);
-            GameManager.Instance.EventManager.TriggerPathFindEvent();
         }
     }
 }

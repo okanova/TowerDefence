@@ -4204,6 +4204,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 990900451}
     m_Modifications:
+    - target: {fileID: 2717686296259598647, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_text
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717686296259598647, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2717686296323738910, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
       propertyPath: m_Name
@@ -4314,6 +4324,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2717686297611524593, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_text
+      value: 'FIRE
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820141847064645873, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: Cost
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820141847064645873, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: _panel
+      value: 
+      objectReference: {fileID: 1908768873}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 803cd099c41ee4a4eae945c89277445e, type: 3}
 --- !u!224 &423920852 stripped
@@ -5477,6 +5504,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 990900451}
     m_Modifications:
+    - target: {fileID: 2717686296259598647, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_text
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717686296259598647, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717686296259598647, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2717686296323738910, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
       propertyPath: m_Name
@@ -5587,6 +5629,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2717686297611524593, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_text
+      value: CANNONBALL
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717686297611524593, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 51.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820141847064645873, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: Cost
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820141847064645873, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: _panel
+      value: 
+      objectReference: {fileID: 1908768873}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 803cd099c41ee4a4eae945c89277445e, type: 3}
 --- !u!224 &532524238 stripped
@@ -6104,6 +6166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ClickGrid: {fileID: 0}
+  CanClick: 0
 --- !u!1 &584061752
 GameObject:
   m_ObjectHideFlags: 0
@@ -9755,8 +9818,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 272.651, y: 0}
-  m_SizeDelta: {x: 545.302, y: 0}
+  m_AnchoredPosition: {x: 227.30974, y: 0}
+  m_SizeDelta: {x: 454.6182, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &990900452
 MonoBehaviour:
@@ -20393,6 +20456,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 990900451}
     m_Modifications:
+    - target: {fileID: 2717686296259598647, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_text
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717686296259598647, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717686296259598647, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2717686296323738910, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
       propertyPath: m_Name
@@ -20503,5 +20581,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2717686296658150303, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717686296658150303, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cdd6bb61c3ea99e4389a40a507f4216f,
+        type: 3}
+    - target: {fileID: 2717686297216130792, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717686297216130792, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717686297216130792, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717686297611524593, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_text
+      value: ARCHER
+      objectReference: {fileID: 0}
+    - target: {fileID: 2717686297611524593, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820141847064645873, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: Cost
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820141847064645873, guid: 803cd099c41ee4a4eae945c89277445e,
+        type: 3}
+      propertyPath: _panel
+      value: 
+      objectReference: {fileID: 1908768873}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 803cd099c41ee4a4eae945c89277445e, type: 3}

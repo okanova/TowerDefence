@@ -15,5 +15,5 @@ MonoBehaviour:
   GoblinHP: 100
   GoblinDamage: 1
   GoblinGold: 10
-  GoblinSpeed: 0.25
-  GoblinAnimationSpeed: 0.5
+  GoblinSpeed: 0.5
+  GoblinAnimationSpeed: 1

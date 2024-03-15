@@ -7,9 +7,9 @@ namespace Game.Scripts.Managers
     public class EventManager : MonoBehaviour
     {
         public event EventHandler<PathFinderEventArgs> OnChangePath;
-        public event EventHandler<GoldEventArgs> GoldChanger;
-        public event EventHandler<HPEventArgs> TakeDamage;
-        public event EventHandler<GameLoseEventArgs> GameLose;
+        public event EventHandler<GoldEventArgs> OnGoldChanger;
+        public event EventHandler<HPEventArgs> OnTakeDamage;
+        public event EventHandler<GameLoseEventArgs> OnGameLose;
 
         public void TriggerPathFindEvent()
         {
@@ -19,17 +19,17 @@ namespace Game.Scripts.Managers
         
         public void GoldEvent(int amount)
         {
-            GoldChanger?.Invoke(this, new GoldEventArgs(amount));
+            OnGoldChanger?.Invoke(this, new GoldEventArgs(amount));
         }
 
         public void HPEvent()
         {
-            TakeDamage?.Invoke(this, new HPEventArgs());
+            OnTakeDamage?.Invoke(this, new HPEventArgs());
         }
         
         public void GameLoseEvent()
         {
-            GameLose?.Invoke(this, new GameLoseEventArgs());
+            OnGameLose?.Invoke(this, new GameLoseEventArgs());
         }
        
     }

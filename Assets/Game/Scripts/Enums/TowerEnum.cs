@@ -1,5 +1,6 @@
 public enum TowerType
 {
     Archer,
-    Ball
+    CannonBall,
+    Fire
 }

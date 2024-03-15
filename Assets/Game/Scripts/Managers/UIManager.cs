@@ -1,9 +1,10 @@
 using System;
-using System.Collections.Generic;
 using Game.Scripts.MVC.Gold;
 using Game.Scripts.MVC.HP;
 using Game.Scripts.Views.UIViews;
 using UnityEngine;
+using UnityEngine.UI;
+using Sirenix.OdinInspector;
 
 namespace Game.Scripts.Managers
 {
@@ -19,8 +20,6 @@ namespace Game.Scripts.Managers
 
         public ButtonView[] ButtonViews;
         
-       
-
         public void Initialize()
         {
             CloseAllPanels();
@@ -29,9 +28,9 @@ namespace Game.Scripts.Managers
             GoldController.Initialize();
             HealthController.Initialize();
             
-            GameManager.Instance.EventManager.GameLose += LoseGame;
+            GameManager.Instance.EventManager.OnGameLose += LoseOnGame;
 
-            ButtonViews = GetComponentsInChildren<ButtonView>();
+            ButtonViews = FindObjectsOfType<ButtonView>(true);
             
             for (int i = 0; i < ButtonViews.Length; i++)
             {
@@ -50,7 +49,7 @@ namespace Game.Scripts.Managers
             obj.SetActive(true);
         }
         
-        private void LoseGame(object sender, EventArgs args)
+        private void LoseOnGame(object sender, EventArgs args)
         {
             CloseAllPanels();
             OpenSelectPanel(LosePanel);

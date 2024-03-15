@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Wave Settings
   m_EditorClassIdentifier: 
   Waves:
-  - SpawnTime: 3
+  - SpawnTime: 5
     WaveDoors:
     - Types: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
       DoorCount: 0

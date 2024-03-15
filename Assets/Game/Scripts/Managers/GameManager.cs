@@ -32,16 +32,16 @@ namespace Game.Scripts.Managers
             UIManager = FindObjectOfType<UIManager>();
             
             GridManager.Initialize();
-            PathFinder.Initialize();
             ObjectPooling.Initialize();
             EnemyManager.Initialize();
             UIManager.Initialize();
-            
+            PathFinder.Initialize();
+
             SaveData();
-            EventManager.GameLose += LoseGame;
+            EventManager.OnGameLose += LoseOnGame;
         }
 
-        private void LoseGame(object sender, EventArgs args)
+        private void LoseOnGame(object sender, EventArgs args)
         {
             
         }

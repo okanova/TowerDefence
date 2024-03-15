@@ -17,6 +17,20 @@ namespace Game.Scripts.MVC.Gold
             LoadData();
             _goldView = GetComponent<GoldView>();
             _goldView.SetText(GoldModel.GoldValue);
+            GameManager.Instance.EventManager.GoldEvent(GoldModel.GoldValue);
+        }
+
+        public bool CanBuy(int value)
+        {
+            if (GoldModel.GoldValue < value)
+            {
+                return false;
+            }
+            else
+            {
+                RemoveValue(value);
+                return true;
+            }
         }
 
         public void AddValue(int value)

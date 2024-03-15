@@ -34,6 +34,9 @@ namespace Game.Scripts.Controller.GridSystem
 
         public void OnMouseDown()
         {
+            if (!GameManager.Instance.GridManager.CanClick)
+                return;
+            
             GameManager.Instance.GridManager.ClickGrid = this;
             SetColor(Color.white);
             GameManager.Instance.EventManager.TriggerPathFindEvent();
