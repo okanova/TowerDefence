@@ -1,20 +1,26 @@
 using System;
+using System.Collections.Generic;
 using Game.Scripts.MVC.Gold;
 using Game.Scripts.MVC.HP;
+using Game.Scripts.Views.UIViews;
 using UnityEngine;
 
 namespace Game.Scripts.Managers
 {
     public class UIManager : MonoBehaviour
     {
-
         public GoldController GoldController;
 
         public HealthController HealthController;
 
         public GameObject GamePanel;
         public GameObject LosePanel;
+        [SerializeField] private GameObject _buyTowerPanel;
+
+        public ButtonView[] ButtonViews;
         
+       
+
         public void Initialize()
         {
             CloseAllPanels();
@@ -24,6 +30,13 @@ namespace Game.Scripts.Managers
             HealthController.Initialize();
             
             GameManager.Instance.EventManager.GameLose += LoseGame;
+
+            ButtonViews = GetComponentsInChildren<ButtonView>();
+            
+            for (int i = 0; i < ButtonViews.Length; i++)
+            {
+                ButtonViews[i].Initialize();
+            }
         }
 
         private void CloseAllPanels()
@@ -41,6 +54,11 @@ namespace Game.Scripts.Managers
         {
             CloseAllPanels();
             OpenSelectPanel(LosePanel);
+        }
+
+        public void OpenBuyTowerPanel()
+        {
+            _buyTowerPanel.SetActive(true);
         }
     }
 }

@@ -53,7 +53,7 @@ namespace Game.Scripts.Managers
             {
                 for (int j = 0; j < Grids.GetLength(1); j++)
                 {
-                    Grids[i, j].Material.SetColor("_BaseColor", Color.gray);
+                    Grids[i, j].SetColor(Color.gray);
                     if (Grids[i,j].GridSituation == GridSituation.Path)
                         Grids[i,j].SetGridSituation(GridSituation.Empty);
                 }
@@ -68,19 +68,19 @@ namespace Game.Scripts.Managers
                 {
                     if (Grids[i,j].GridSituation == GridSituation.Enter || Grids[i,j].GridSituation == GridSituation.Exit)
                     {
-                        Grids[i,j].Material.SetColor("_BaseColor",Color.green);
+                        Grids[i, j].SetColor(Color.yellow);
                     }
                     else if (Grids[i,j].GridSituation == GridSituation.Tower)
                     {
-                        Grids[i,j].Material.SetColor("_BaseColor",Color.red);
+                        Grids[i, j].SetColor(Color.red);
                     }
                     else if (Grids[i,j].GridSituation == GridSituation.Path)
                     {
-                        Grids[i,j].Material.SetColor("_BaseColor",Color.cyan);
+                        Grids[i, j].SetColor(Color.cyan);
                     }
                     else
                     {
-                        Grids[i,j].Material.SetColor("_BaseColor",Color.gray);
+                        Grids[i, j].SetColor(Color.gray);
                     }
                 }
             }

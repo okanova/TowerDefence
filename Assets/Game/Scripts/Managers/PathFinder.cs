@@ -23,8 +23,11 @@ namespace Game.Scripts.Managers
 
         private List<Grid> _searcherList = new List<Grid>();
 
+        public string BuyState;
+
         public void Initialize()
         {
+            BuyState = "CanBuy";
             OnEnable();
 
             for (int i = 0; i < GameManager.Instance.GridManager.Grids.GetLength(0); i++)
@@ -86,6 +89,7 @@ namespace Game.Scripts.Managers
                     if (_searcherList.Count == GameManager.Instance.GridManager.Grids.Length)
                     {
                         _state = "NotFound";
+                        BuyState = "NotClear";
                         return;
                     }
 
@@ -96,12 +100,21 @@ namespace Game.Scripts.Managers
             
             if (_state == "Found")
             {
-                GameManager.Instance.GridManager.ClearGridColors();
-                if ( GameManager.Instance.GridManager.ClickGrid != null)
-                    GameManager.Instance.GridManager.ClickGrid.SetGridSituation(GridSituation.Tower);
+                if (BuyState != "CanBuy")
+                {
+                    BuyState = "CanBuy";
+                    GameManager.Instance.UIManager.OpenBuyTowerPanel();
+                }
+                else
+                {
+                    GameManager.Instance.GridManager.ClearGridColors();
+                    if ( GameManager.Instance.GridManager.ClickGrid != null)
+                        GameManager.Instance.GridManager.ClickGrid.SetGridSituation(GridSituation.Tower);
                 
-                SetGridForms();
-                GameManager.Instance.GridManager.CheckGrids();
+                    SetGridForms();
+                    GameManager.Instance.GridManager.CheckGrids();
+                    BuyState = "Clear";
+                }
             }
         }
 
@@ -135,7 +148,10 @@ namespace Game.Scripts.Managers
                     {
                         _pathCount = count + 1;
                         _state = "NextStep";
-                        Paths[count].Path = temp;
+                        
+                        if (BuyState == "CanBuy")
+                            Paths[count].Path = temp;
+                        
                         return;
                     }
                 }

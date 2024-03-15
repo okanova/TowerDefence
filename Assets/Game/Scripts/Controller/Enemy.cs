@@ -165,7 +165,6 @@ public class Enemy : MonoBehaviour
           if (other.CompareTag("Enemy"))
           {
               DOTween.Play(transform);
-              Debug.Log("girdi");
           }
       }
 }

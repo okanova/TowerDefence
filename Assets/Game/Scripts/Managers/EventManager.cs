@@ -16,6 +16,7 @@ namespace Game.Scripts.Managers
             OnChangePath?.Invoke(this, new PathFinderEventArgs());
         }
         
+        
         public void GoldEvent(int amount)
         {
             GoldChanger?.Invoke(this, new GoldEventArgs(amount));

@@ -11,7 +11,7 @@ namespace Game.Scripts.Controller.GridSystem
         private Vector2Int _gridPosition;
         private GridSituation _gridSituation;
 
-        public Material Material;
+        private Material _material;
         
         public GridSituation GridSituation => _gridSituation;
         public List<Grid> Neighbors;
@@ -19,7 +19,7 @@ namespace Game.Scripts.Controller.GridSystem
         public void Initialize()
         {
             _gridPosition = new Vector2Int((int)transform.localPosition.x, (int)transform.localPosition.z);
-            Material = GetComponent<Renderer>().material;
+            _material = GetComponent<Renderer>().material;
         }
 
         public void SetGridSituation(GridSituation value)
@@ -27,9 +27,15 @@ namespace Game.Scripts.Controller.GridSystem
             _gridSituation = value;
         }
 
+        public void SetColor(Color color)
+        {
+            _material.SetColor("_BaseColor", color);
+        }
+
         public void OnMouseDown()
         {
             GameManager.Instance.GridManager.ClickGrid = this;
+            SetColor(Color.white);
             GameManager.Instance.EventManager.TriggerPathFindEvent();
         }
     }
