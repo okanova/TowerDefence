@@ -129,7 +129,7 @@ public class Enemy : MonoBehaviour
               pathPoints[i] = GameManager.Instance.PathFinder.Paths[_pathCount].Path[i + value].transform.position;
           }
 
-          transform.DOPath(pathPoints, _speed, PathType.CatmullRom).SetSpeedBased().SetLookAt(0.1f).SetEase(Ease.Linear).OnComplete(Attack);
+          transform.DOPath(pathPoints, _speed, PathType.CatmullRom).SetSpeedBased().SetLookAt(0.1f).SetEase(Ease.Linear);
       }
       
       public void Attack()
@@ -144,5 +144,28 @@ public class Enemy : MonoBehaviour
           
           if (count == 0)
               return;
+      }
+
+      private void OnTriggerEnter(Collider other)
+      {
+          if (!other.CompareTag("Enemy"))
+              return;
+          
+          if (Vector3.Distance(transform.position,
+                  GameManager.Instance.PathFinder.Paths[_pathCount].Exit.transform.position) >
+              Vector3.Distance(other.transform.position,
+                  GameManager.Instance.PathFinder.Paths[_pathCount].Exit.transform.position))
+          {
+              DOTween.Pause(transform);
+          }
+      }
+
+      private void OnTriggerExit(Collider other)
+      {
+          if (other.CompareTag("Enemy"))
+          {
+              DOTween.Play(transform);
+              Debug.Log("girdi");
+          }
       }
 }
