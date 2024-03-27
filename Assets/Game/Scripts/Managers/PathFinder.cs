@@ -28,7 +28,6 @@ namespace Game.Scripts.Managers
         public void Initialize()
         {
             BuyState = "CanBuy";
-            OnEnable();
 
             for (int i = 0; i < GameManager.Instance.GridManager.Grids.GetLength(0); i++)
             {
@@ -103,7 +102,7 @@ namespace Game.Scripts.Managers
                 if (BuyState != "CanBuy")
                 {
                     BuyState = "CanBuy";
-                    GameManager.Instance.UIManager.OpenBuyTowerPanel();
+                    GameManager.Instance.UIManager.TowerBuyPanelView.CloseOpenImages(true);
                     GameManager.Instance.GridManager.CanClick = false;
                 }
                 else

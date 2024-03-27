@@ -24,24 +24,18 @@ namespace Game.Scripts.Managers
         private void Start()
         {
             LoadData();
-            GridManager = FindObjectOfType<GridManager>();
-            PathFinder = FindObjectOfType<PathFinder>();
-            EventManager = FindObjectOfType<EventManager>();
-            ObjectPooling = FindObjectOfType<ObjectPooling>();
-            EnemyManager = FindObjectOfType<EnemyManager>();
-            UIManager = FindObjectOfType<UIManager>();
             
-            GridManager.Initialize();
             ObjectPooling.Initialize();
-            EnemyManager.Initialize();
             UIManager.Initialize();
+            GridManager.Initialize();
+            EnemyManager.Initialize();
             PathFinder.Initialize();
 
             SaveData();
-            EventManager.OnGameLose += LoseOnGame;
+            EventManager.OnGameLose += LoseGame;
         }
 
-        private void LoseOnGame(object sender, EventArgs args)
+        private void LoseGame(object sender, EventArgs args)
         {
             
         }

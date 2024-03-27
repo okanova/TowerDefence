@@ -2,6 +2,7 @@ using System;
 using Game.Scripts.Events;
 using Game.Scripts.Managers;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Game.Scripts.Views.UIViews
 {
@@ -9,16 +10,8 @@ namespace Game.Scripts.Views.UIViews
     {
         public TowerType TowerType;
         public int Cost;
-
-        [SerializeField] private GameObject _panel;
-
-
-        public override void Initialize()
-        {
-            base.Initialize();
-            OnEnable();
-        }
-
+        
+       
         private void OnEnable()
         {
             GameManager.Instance.EventManager.OnGoldChanger += CheckMoney;
@@ -34,7 +27,7 @@ namespace Game.Scripts.Views.UIViews
             if (GameManager.Instance.UIManager.GoldController.CanBuy(Cost))
             {
                 GameManager.Instance.EventManager.TriggerPathFindEvent();
-                _panel.SetActive(false);
+                GameManager.Instance.UIManager.TowerBuyPanelView.CloseOpenImages(false);
             }
         }
 
@@ -42,6 +35,9 @@ namespace Game.Scripts.Views.UIViews
         {
             GoldEventArgs goldArgs = args as GoldEventArgs;
 
+            if (_button == null)
+                _button = GetComponent<Button>();
+            
             _button.interactable = goldArgs.Amount >= Cost;
             Debug.Log(_button.interactable);
         }

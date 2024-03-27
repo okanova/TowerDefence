@@ -16,9 +16,10 @@ namespace Game.Scripts.Managers
 
         public GameObject GamePanel;
         public GameObject LosePanel;
-        [SerializeField] private GameObject _buyTowerPanel;
 
         public ButtonView[] ButtonViews;
+
+        public TowerBuyPanelView TowerBuyPanelView;
         
         public void Initialize()
         {
@@ -27,6 +28,7 @@ namespace Game.Scripts.Managers
             
             GoldController.Initialize();
             HealthController.Initialize();
+            TowerBuyPanelView.Initialize();
             
             GameManager.Instance.EventManager.OnGameLose += LoseOnGame;
 
@@ -53,11 +55,6 @@ namespace Game.Scripts.Managers
         {
             CloseAllPanels();
             OpenSelectPanel(LosePanel);
-        }
-
-        public void OpenBuyTowerPanel()
-        {
-            _buyTowerPanel.SetActive(true);
         }
     }
 }

@@ -3,11 +3,11 @@ using UnityEngine.UI;
 
 namespace Game.Scripts.Views.UIViews
 {
-   public class ButtonView : MonoBehaviour
+   public class ButtonView : BaseView
    {
       protected Button _button;
       
-      public virtual void Initialize()
+      public override void Initialize()
       {
          _button = GetComponent<Button>();
          _button.onClick.AddListener(ButtonClick);
