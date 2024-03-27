@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1247559770}
   - {fileID: 540214359}
@@ -269,6 +270,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1369607133}
   - {fileID: 1396506252}
@@ -383,6 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 83610680}
   - {fileID: 106289099}
@@ -619,6 +622,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1655961341}
   - {fileID: 436704505}
@@ -733,6 +737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1405702002}
   - {fileID: 41034429}
@@ -848,6 +853,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1406919786}
   - {fileID: 832377440}
@@ -963,6 +969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 41034429}
   - {fileID: 1238045581}
@@ -1078,6 +1085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 610291014}
   - {fileID: 2030283538}
@@ -1238,6 +1246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1252235476}
   - {fileID: 1904914576}
@@ -1353,6 +1362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1845775637}
   - {fileID: 1456604316}
@@ -1468,6 +1478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 198812605}
   - {fileID: 1143345492}
@@ -1717,6 +1728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1583809958}
   - {fileID: 1130555640}
@@ -1967,6 +1979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 588591759}
   - {fileID: 890652264}
@@ -2082,6 +2095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1658515127}
   - {fileID: 1976241163}
@@ -2197,6 +2211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 858469853}
   - {fileID: 1130555640}
@@ -2311,6 +2326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1613513752}
   - {fileID: 317904362}
@@ -2426,6 +2442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 156717694}
   - {fileID: 585684875}
@@ -2541,6 +2558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1563686958}
   - {fileID: 1658515127}
@@ -2656,6 +2674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1811576872}
   - {fileID: 1190809908}
@@ -2847,6 +2866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1633076216}
   - {fileID: 680413734}
@@ -2962,6 +2982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1570661159}
   - {fileID: 608459110}
@@ -3077,6 +3098,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1671186188}
   - {fileID: 968781917}
@@ -3192,6 +3214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1716404243}
   - {fileID: 815054254}
@@ -3307,6 +3330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 197930806}
   - {fileID: 424460365}
@@ -3422,6 +3446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 553779740}
   - {fileID: 466981192}
@@ -3655,6 +3680,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1976794827}
   - {fileID: 971437859}
@@ -3770,6 +3796,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 501718632}
   - {fileID: 858469853}
@@ -3885,6 +3912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 424460365}
   - {fileID: 1739052803}
@@ -4000,6 +4028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 609707147}
   - {fileID: 1369607133}
@@ -4392,6 +4421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 317904362}
   - {fileID: 387808161}
@@ -4507,6 +4537,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1405702002}
   - {fileID: 1633076216}
@@ -4621,6 +4652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 2136124585}
   - {fileID: 823669804}
@@ -4736,6 +4768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 971437859}
   - {fileID: 1714280856}
@@ -4851,6 +4884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 804221253}
   - {fileID: 2048097108}
@@ -4966,6 +5000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 330246317}
   - {fileID: 1811576872}
@@ -5081,6 +5116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1976241163}
   - {fileID: 353246510}
@@ -5196,6 +5232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 553779740}
   - {fileID: 1252235476}
@@ -5310,6 +5347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1745548292}
   - {fileID: 674965393}
@@ -5425,6 +5463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1649067095}
   - {fileID: 1671186188}
@@ -5711,6 +5750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1950510970}
   - {fileID: 197672662}
@@ -5892,6 +5932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 513234727}
   - {fileID: 330246317}
@@ -6007,6 +6048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 2116157389}
   - {fileID: 1293934224}
@@ -6221,6 +6263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1023706218}
   - {fileID: 1592573114}
@@ -6336,6 +6379,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 198812605}
   - {fileID: 1023706218}
@@ -6451,6 +6495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1783910053}
   - {fileID: 178356828}
@@ -6597,6 +6642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 815054254}
   - {fileID: 1406919786}
@@ -6712,6 +6758,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 299805367}
   - {fileID: 1840663780}
@@ -6827,6 +6874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 2139199262}
   - {fileID: 387981000}
@@ -6941,6 +6989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 822933277}
   - {fileID: 123062543}
@@ -7055,6 +7104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1655961341}
   - {fileID: 1620332938}
@@ -7170,6 +7220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 525587093}
   - {fileID: 1061011072}
@@ -7285,6 +7336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 249367522}
   - {fileID: 1783910053}
@@ -7400,6 +7452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1917480873}
   - {fileID: 1950510970}
@@ -7515,6 +7568,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1971699991}
   - {fileID: 1870459352}
@@ -7765,6 +7819,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 2048097108}
   - {fileID: 1171815488}
@@ -7879,6 +7934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1870459352}
   - {fileID: 1575085673}
@@ -7994,6 +8050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1592573114}
   - {fileID: 462625429}
@@ -8109,6 +8166,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 310083463}
   - {fileID: 601886402}
@@ -8224,6 +8282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 2007571373}
   - {fileID: 1600112279}
@@ -8338,6 +8397,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 2036705275}
   - {fileID: 610291014}
@@ -8452,6 +8512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 449847579}
   - {fileID: 1282315947}
@@ -8567,6 +8628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 96034074}
   - {fileID: 2116157389}
@@ -8870,6 +8932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 353246510}
   - {fileID: 197672662}
@@ -8985,6 +9048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1367242936}
   - {fileID: 1678933342}
@@ -9100,6 +9164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1441266372}
   - {fileID: 1583809958}
@@ -9215,6 +9280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1836070555}
   - {fileID: 1158187079}
@@ -9329,6 +9395,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 178356828}
   - {fileID: 2085422431}
@@ -9493,6 +9560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1776341133}
   - {fileID: 1716404243}
@@ -9606,6 +9674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 308996944}
   - {fileID: 1441266372}
@@ -9721,6 +9790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 350229225}
   - {fileID: 461760986}
@@ -9902,6 +9972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 585684875}
   - {fileID: 584061753}
@@ -10017,6 +10088,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1456604316}
   - {fileID: 1664337678}
@@ -10178,6 +10250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 674965393}
   - {fileID: 1432775354}
@@ -10367,6 +10440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1190809908}
   - {fileID: 1735815067}
@@ -10482,6 +10556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1620332938}
   - {fileID: 1173698577}
@@ -10597,6 +10672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 173978977}
   - {fileID: 1282315947}
@@ -10711,6 +10787,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1971699991}
   - {fileID: 1999729641}
@@ -10825,6 +10902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1570661159}
   - {fileID: 81225605}
@@ -10939,6 +11017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 883351170}
   - {fileID: 1293934224}
@@ -11052,6 +11131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1678933342}
   - {fileID: 818728546}
@@ -11166,6 +11246,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1128319354}
   - {fileID: 1845775637}
@@ -11313,6 +11394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 229635140}
   - {fileID: 1120090437}
@@ -11462,6 +11544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 106289099}
   - {fileID: 1660284174}
@@ -11668,6 +11751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1714280856}
   - {fileID: 11067730}
@@ -11783,6 +11867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1901555208}
   - {fileID: 1534420450}
@@ -11897,6 +11982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 143913787}
   - {fileID: 1768943530}
@@ -12011,6 +12097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 823669804}
   - {fileID: 1031704934}
@@ -12125,6 +12212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 557312214}
   - {fileID: 1158187079}
@@ -12239,6 +12327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1338987388}
   - {fileID: 1293934224}
@@ -12353,6 +12442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 2085422431}
   - {fileID: 1308932221}
@@ -12468,6 +12558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 2033637561}
   - {fileID: 1664337678}
@@ -12650,6 +12741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1575085673}
   - {fileID: 865527142}
@@ -12765,6 +12857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 387981000}
   - {fileID: 20748899}
@@ -12879,6 +12972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 20748899}
   - {fileID: 1901555208}
@@ -12993,6 +13087,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 436704505}
   - {fileID: 83610680}
@@ -13108,6 +13203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 601886402}
   - {fileID: 96034074}
@@ -13401,6 +13497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1061011072}
   - {fileID: 1917480873}
@@ -13516,6 +13613,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 968781917}
   - {fileID: 873989900}
@@ -13631,6 +13729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 145237853}
   - {fileID: 1031704934}
@@ -13822,6 +13921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1248140769}
   - {fileID: 1888524865}
@@ -13936,6 +14036,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1931096636}
   - {fileID: 202499281}
@@ -14051,6 +14152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1152716295}
   - {fileID: 299805367}
@@ -14166,6 +14268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 790495781}
   - {fileID: 1367242936}
@@ -14281,6 +14384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 873989900}
   - {fileID: 173978977}
@@ -14396,6 +14500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 584061753}
   - {fileID: 804221253}
@@ -14511,6 +14616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1735815067}
   - {fileID: 11067730}
@@ -14625,6 +14731,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1999729641}
   - {fileID: 197930806}
@@ -14740,6 +14847,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 627173114}
   - {fileID: 1128319354}
@@ -14887,6 +14995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 249367522}
   - {fileID: 1716404243}
@@ -15109,6 +15218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 531880694}
   - {fileID: 1152716295}
@@ -15223,6 +15333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 81225605}
   - {fileID: 627173114}
@@ -15338,6 +15449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 202499281}
   - {fileID: 183072201}
@@ -15453,6 +15565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1238045581}
   - {fileID: 2033637561}
@@ -15620,6 +15733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1349222442}
   - {fileID: 1308932221}
@@ -15734,6 +15848,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 531880694}
   - {fileID: 308996944}
@@ -15849,6 +15964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 865527142}
   - {fileID: 1171815488}
@@ -15964,6 +16080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1739052803}
   - {fileID: 2007571373}
@@ -16079,6 +16196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 461760986}
   - {fileID: 1247559770}
@@ -16194,6 +16312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 310083463}
   - {fileID: 928547023}
@@ -16384,6 +16503,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1120090437}
   - {fileID: 1600112279}
@@ -16499,6 +16619,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 387808161}
   - {fileID: 1692608217}
@@ -16614,6 +16735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1768943530}
   - {fileID: 525587093}
@@ -16729,6 +16851,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1745548292}
   - {fileID: 1931096636}
@@ -16843,6 +16966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 928547023}
   - {fileID: 2036705275}
@@ -16957,6 +17081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 680413734}
   - {fileID: 588591759}
@@ -17072,6 +17197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 466981192}
   - {fileID: 229635140}
@@ -17187,6 +17313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 2030283538}
   - {fileID: 883351170}
@@ -17301,6 +17428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 608459110}
   - {fileID: 2087740843}
@@ -17416,6 +17544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1173698577}
   - {fileID: 145237853}
@@ -17531,6 +17660,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 709194537}
   - {fileID: 790495781}
@@ -17661,6 +17791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1534420450}
   - {fileID: 754589111}
@@ -17759,6 +17890,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1396506252}
   - {fileID: 1248140769}
@@ -17873,6 +18005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 143913787}
   - {fileID: 1976794827}
@@ -18048,6 +18181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Images: []
+  Texts: []
 --- !u!1 &1917480872
 GameObject:
   m_ObjectHideFlags: 0
@@ -18080,6 +18214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1432775354}
   - {fileID: 689467837}
@@ -18195,6 +18330,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1563686958}
   - {fileID: 1649067095}
@@ -18309,6 +18445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 689467837}
   - {fileID: 540214359}
@@ -18424,6 +18561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1143345492}
   - {fileID: 709194537}
@@ -18539,6 +18677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 183072201}
   - {fileID: 501718632}
@@ -18654,6 +18793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1904914576}
   - {fileID: 350229225}
@@ -18769,6 +18909,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1613513752}
   - {fileID: 513234727}
@@ -18883,6 +19024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1692608217}
   - {fileID: 818728546}
@@ -18998,6 +19140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 123062543}
   - {fileID: 1836070555}
@@ -19112,6 +19255,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1660284174}
   - {fileID: 1349222442}
@@ -19303,6 +19447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1776341133}
   - {fileID: 822933277}
@@ -19417,6 +19562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 462625429}
   - {fileID: 754589111}
@@ -19687,6 +19833,7 @@ MonoBehaviour:
   LosePanel: {fileID: 1431975194}
   ButtonViews: []
   TowerBuyPanelView: {fileID: 1908768877}
+  TowerUpgradePanelView: {fileID: 0}
 --- !u!1 &2085422430
 GameObject:
   m_ObjectHideFlags: 0
@@ -19719,6 +19866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 890652264}
   - {fileID: 1338987388}
@@ -19834,6 +19982,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 1840663780}
   - {fileID: 2136124585}
@@ -19993,6 +20142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 832377440}
   - {fileID: 557312214}
@@ -20295,6 +20445,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 2087740843}
   - {fileID: 449847579}
@@ -20410,6 +20561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be589f7bb5f0740419c379f5c6f1139b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Tower: {fileID: 0}
   Neighbors:
   - {fileID: 609707147}
   - {fileID: 156717694}
@@ -20731,12 +20883,12 @@ PrefabInstance:
     - target: {fileID: 7223970148062335526, guid: ddf3046c826669d4584a531079f97d02,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 500
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 7223970148062335526, guid: ddf3046c826669d4584a531079f97d02,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 750
+      value: 900
       objectReference: {fileID: 0}
     - target: {fileID: 7223970148062335526, guid: ddf3046c826669d4584a531079f97d02,
         type: 3}
@@ -20802,11 +20954,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TowerUpgradePanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 7223970148062335527, guid: ddf3046c826669d4584a531079f97d02,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddf3046c826669d4584a531079f97d02, type: 3}

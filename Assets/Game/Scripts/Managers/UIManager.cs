@@ -20,6 +20,7 @@ namespace Game.Scripts.Managers
         public ButtonView[] ButtonViews;
 
         public TowerBuyPanelView TowerBuyPanelView;
+        public TowerUpgradePanelView TowerUpgradePanelView;
         
         public void Initialize()
         {
@@ -29,6 +30,7 @@ namespace Game.Scripts.Managers
             GoldController.Initialize();
             HealthController.Initialize();
             TowerBuyPanelView.Initialize();
+            TowerUpgradePanelView.Initialize();
             
             GameManager.Instance.EventManager.OnGameLose += LoseOnGame;
 

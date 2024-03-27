@@ -47,6 +47,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecd8d70b8d161b04cbe756b45db38630, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _models:
+  - {fileID: 106507541193851589}
+  - {fileID: 1054829090057416214}
+  - {fileID: 171955535594998966}
+  _towerSettings: {fileID: 11400000, guid: 0462cad2dcdac3646b323796e448e588, type: 2}
 --- !u!1001 &85095722358496558
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57,7 +62,7 @@ PrefabInstance:
     - target: {fileID: 1120784343976620856, guid: 6e02f4ccfc0dfcc41b891fd3cc45d7a8,
         type: 3}
       propertyPath: m_Name
-      value: CannonTower
+      value: CannonBall
       objectReference: {fileID: 0}
     - target: {fileID: 1120784343976620856, guid: 6e02f4ccfc0dfcc41b891fd3cc45d7a8,
         type: 3}
@@ -132,6 +137,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 85095722358496558}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1054829090057416214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1120784343976620856, guid: 6e02f4ccfc0dfcc41b891fd3cc45d7a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 85095722358496558}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5722924411977514369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -202,7 +213,7 @@ PrefabInstance:
     - target: {fileID: 5625432875342380868, guid: 2d36334c8f902e447a65ac7ef53ef8ab,
         type: 3}
       propertyPath: m_Name
-      value: FireTower
+      value: Fire
       objectReference: {fileID: 0}
     - target: {fileID: 5625432875342380868, guid: 2d36334c8f902e447a65ac7ef53ef8ab,
         type: 3}
@@ -211,6 +222,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d36334c8f902e447a65ac7ef53ef8ab, type: 3}
+--- !u!1 &106507541193851589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5625432875342380868, guid: 2d36334c8f902e447a65ac7ef53ef8ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 5722924411977514369}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &106507541194022629 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5625432875342078820, guid: 2d36334c8f902e447a65ac7ef53ef8ab,
@@ -227,7 +244,7 @@ PrefabInstance:
     - target: {fileID: 6058308617853214079, guid: a666e2f213a542b459d834c65ed7a493,
         type: 3}
       propertyPath: m_Name
-      value: ArcherTower
+      value: Archer
       objectReference: {fileID: 0}
     - target: {fileID: 6058308617853214079, guid: a666e2f213a542b459d834c65ed7a493,
         type: 3}
@@ -291,6 +308,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a666e2f213a542b459d834c65ed7a493, type: 3}
+--- !u!1 &171955535594998966 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6058308617853214079, guid: a666e2f213a542b459d834c65ed7a493,
+    type: 3}
+  m_PrefabInstance: {fileID: 6228908404062638537}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &660120438453376524 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6870451489134102469, guid: a666e2f213a542b459d834c65ed7a493,

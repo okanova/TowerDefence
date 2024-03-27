@@ -1,5 +1,4 @@
 using System;
-using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace Game.Scripts.Settings
@@ -15,25 +14,19 @@ namespace Game.Scripts.Settings
     public class Towers
     {
         public TowerType TowerType;
-        public int Level1Damage;
-        public int Level1ExtraDamage;
-        public float Level1SlowValue;
-        public float Level1AttackRate;
-        public int Level1UpgradeValue;
-        public int Level1SellValue;
-        
-        public int Level2Damage;
-        public int Level2ExtraDamage;
-        public float Level2SlowValue;
-        public float Level2AttackRate;
-        public int Level2UpgradeValue;
-        public int Level2SellValue;
-        
-        public int Level3Damage;
-        public int Level3ExtraDamage;
-        public float Level3SlowValue;
-        public float Level3AttackRate;
-        public int Level3UpgradeValue;
-        public int Level3SellValue;
+        public TowerLevels[] TowerLevels;
+    }
+
+    [Serializable]
+    public class TowerLevels
+    {
+        public string Name;
+        public Sprite Sprite;
+        public int Damage;
+        public int ExtraDamage;
+        public float SlowValue;
+        public float AttackRate;
+        public int UpgradeValue;
+        public int SellValue;
     }
 }

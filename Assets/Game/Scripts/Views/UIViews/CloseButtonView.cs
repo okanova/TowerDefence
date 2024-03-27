@@ -9,7 +9,9 @@ namespace Game.Scripts.Views.UIViews
         {
             GameManager.Instance.PathFinder.BuyState = "Clear";
             GameManager.Instance.GridManager.CanClick = true;
+            GameManager.Instance.GridManager.ClickGrid = null;
             GameManager.Instance.UIManager.TowerBuyPanelView.CloseOpenImages(false);
+            GameManager.Instance.UIManager.TowerUpgradePanelView.ClosePanel();
         }
     }
 }

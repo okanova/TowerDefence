@@ -1,3 +1,4 @@
+using Game.Scripts.Managers;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,7 +16,7 @@ namespace Game.Scripts.Views.UIViews
 
       protected virtual void ButtonClick()
       {
-        
+       
       }
    }
 }

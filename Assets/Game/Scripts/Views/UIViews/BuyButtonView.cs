@@ -39,7 +39,6 @@ namespace Game.Scripts.Views.UIViews
                 _button = GetComponent<Button>();
             
             _button.interactable = goldArgs.Amount >= Cost;
-            Debug.Log(_button.interactable);
         }
     }
 }
