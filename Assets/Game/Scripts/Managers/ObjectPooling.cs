@@ -10,9 +10,16 @@ namespace Game.Scripts.Managers
         [SerializeField] private Transform _poolParent;
             
         [TabGroup("ENEMY")] public GameObject Enemy;
+        [EnumPaging]
         [TabGroup("ENEMY")] public ObjectPoolType EnemyType;
         [TabGroup("ENEMY")] public int EnemyPoolSize;
         [TabGroup("ENEMY")] public List<GameObject> EnemyObjectPool;
+        
+        [TabGroup("TOWER")] public GameObject Tower;
+        [EnumPaging]
+        [TabGroup("TOWER")] public ObjectPoolType TowerType;
+        [TabGroup("TOWER")] public int TowerPoolSize;
+        [TabGroup("TOWER")] public List<GameObject> TowerObjectPool;
         
         public void Initialize()
         {

@@ -4271,7 +4271,7 @@ PrefabInstance:
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
@@ -4281,7 +4281,7 @@ PrefabInstance:
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
@@ -4331,12 +4331,12 @@ PrefabInstance:
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 1250
       objectReference: {fileID: 0}
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -491.5
       objectReference: {fileID: 0}
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
@@ -5597,7 +5597,7 @@ PrefabInstance:
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
@@ -5607,7 +5607,7 @@ PrefabInstance:
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
@@ -5657,12 +5657,12 @@ PrefabInstance:
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 750
       objectReference: {fileID: 0}
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -491.5
       objectReference: {fileID: 0}
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
@@ -9528,6 +9528,10 @@ MonoBehaviour:
   EnemyType: 0
   EnemyPoolSize: 1000
   EnemyObjectPool: []
+  Tower: {fileID: 1054829089520855138, guid: a076f3f387294124aab6eb1f9bc321e9, type: 3}
+  TowerType: 0
+  TowerPoolSize: 100
+  TowerObjectPool: []
 --- !u!1 &928547022
 GameObject:
   m_ObjectHideFlags: 0
@@ -20693,7 +20697,7 @@ PrefabInstance:
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
@@ -20703,7 +20707,7 @@ PrefabInstance:
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
@@ -20753,12 +20757,12 @@ PrefabInstance:
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -491.5
       objectReference: {fileID: 0}
     - target: {fileID: 2717686296323738911, guid: 803cd099c41ee4a4eae945c89277445e,
         type: 3}

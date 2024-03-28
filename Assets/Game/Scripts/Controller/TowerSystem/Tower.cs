@@ -5,10 +5,13 @@ namespace Game.Scripts.Controller.TowerSystem
 {
     public class Tower : MonoBehaviour
     {
+        private TowerType _towerType;
+        public TowerType TowerType => _towerType;
+        
         [SerializeField] private GameObject[] _models;
         [SerializeField] private TowerSettings _towerSettings;
+        
         private int _towerTypeCount;
-        private TowerType _towerType;
 
         private int _towerLevel;
         public int TowerLevel => _towerLevel;
