@@ -1,13 +1,14 @@
 using System;
 using Game.Scripts.Events;
 using Game.Scripts.Managers;
-using UnityEngine;
+using Sirenix.OdinInspector;
 using UnityEngine.UI;
 
 namespace Game.Scripts.Views.UIViews
 {
     public class BuyButtonView : ButtonView
     {
+        [EnumPaging]
         public TowerType TowerType;
         public int Cost;
         
@@ -24,11 +25,10 @@ namespace Game.Scripts.Views.UIViews
 
         protected override void ButtonClick()
         {
-            if (GameManager.Instance.UIManager.GoldController.CanBuy(Cost))
-            {
-                GameManager.Instance.EventManager.TriggerPathFindEvent();
-                GameManager.Instance.UIManager.TowerBuyPanelView.CloseOpenImages(false);
-            }
+            GameManager.Instance.UIManager.GoldController.RemoveValue(Cost);
+            GameManager.Instance.EventManager.TriggerPathFindEvent();
+            GameManager.Instance.UIManager.TowerBuyPanelView.CloseOpenImages(false);
+            GameManager.Instance.GridManager.ClickGrid.CreateTower(TowerType);
         }
 
         private void CheckMoney(object sender, EventArgs args)

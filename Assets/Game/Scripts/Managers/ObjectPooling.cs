@@ -24,6 +24,7 @@ namespace Game.Scripts.Managers
         public void Initialize()
         {
             InitializeObjectPool(Enemy, EnemyPoolSize, EnemyObjectPool);
+            InitializeObjectPool(Tower, TowerPoolSize, TowerObjectPool);
         }
         
         private void InitializeObjectPool(GameObject obj, int poolSize, List<GameObject> objectPool)
@@ -49,8 +50,12 @@ namespace Game.Scripts.Managers
             {
                 return GetObjectFromPool(parent, Vector3.zero, Quaternion.identity, EnemyObjectPool, Enemy);
             }
+            else if (type == TowerType)
+            {
+                return GetObjectFromPool(parent, Vector3.zero, Quaternion.identity, TowerObjectPool, Tower);
+            }
             
-            return GetObjectFromPool(parent, Vector3.zero, Quaternion.identity, EnemyObjectPool, Enemy);
+            return null;
         }
         
         private GameObject GetObjectFromPool(Transform parent, Vector3 position, Quaternion rotation, List<GameObject> objectPool, GameObject newObj)

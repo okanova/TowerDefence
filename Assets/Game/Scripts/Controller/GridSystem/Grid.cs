@@ -63,6 +63,12 @@ namespace Game.Scripts.Controller.GridSystem
             GameManager.Instance.GridManager.ClickGrid = null;
         }
 
+        public void CreateTower(TowerType type)
+        {
+            Tower tower = GameManager.Instance.ObjectPooling.GetObject(ObjectPoolType.Tower, transform).GetComponent<Tower>();
+            tower.Initialize(type);
+        }
+
         public void SaveData()
         {
             throw new NotImplementedException();
